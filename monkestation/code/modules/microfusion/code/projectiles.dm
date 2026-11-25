@@ -53,23 +53,25 @@
 	name = "hellfire microfusion laser"
 	icon_state = "laser_greyscale"
 	wound_bonus = 0
-	damage = 20 // You are trading damage for a significant wound bonus and speed increase
+	damage = 25
 	speed = 1.6
 	color = LIGHT_COLOR_FLARE
 	light_color = LIGHT_COLOR_FLARE
 
 /obj/projectile/beam/laser/microfusion/scatter
 	name = "scatter microfusion laser"
+	damage = 27
 
 /obj/projectile/beam/laser/microfusion/scatter/max
 	name = "scatter microfusion laser"
+	damage = 30
 
 /obj/projectile/beam/laser/microfusion/repeater
-	damage = 12.5
+	damage = 18
 
 /obj/projectile/beam/laser/microfusion/penetrator
 	name = "focused microfusion laser"
-	damage = 20
+	damage = 15 // This shit is strong af capable of annihlating most armor, should be weaker than the non-illegal tech variant.
 	armour_penetration = 75
 
 /obj/projectile/beam/laser/microfusion/lance

@@ -161,7 +161,7 @@ An overclocked shotgun.
 	pellets_to_add = 6
 	variance_to_add = 25
 	recoil_adjust = 1
-	spread_adjust = 15
+	spread_adjust = 10
 	projectile_override = /obj/projectile/beam/laser/microfusion/scatter/max
 	power_usage = 20
 
@@ -204,15 +204,13 @@ The gun can fire volleys of shots.
 */
 /obj/item/microfusion_gun_attachment/barrel/repeater
 	name = "repeating phase emitter upgrade"
-	desc = "This barrel attachment upgrades the central phase emitter to fire off two beams in quick succession. While offering an increased rate of fire, the heat output and recoil rises too."
+	desc = "This barrel attachment upgrades the central phase emitter to fire off two beams in quick succession. The extra output comes at the cost of the emitter running considerably hotter."
 	icon_state = "attachment_repeater"
 	attachment_overlay_icon_state = "attachment_repeater"
 	heat_addition = 40
 	slot = GUN_SLOT_BARREL
-	spread_adjust = 15
-	recoil_adjust = 1
 	burst_to_add = 1
-	delay_to_add = 5
+	delay_to_add = 2
 	projectile_override = /obj/projectile/beam/laser/microfusion/repeater
 
 /*
@@ -226,7 +224,6 @@ The gun can fire volleys of shots that penetrate armor.
 	desc = "A focused variant of the repeating phase controller. It allows the lasers to penetrate armor however this results in higher power usage."
 	icon_state = "attachment_penetrator"
 	attachment_overlay_icon_state = "attachment_penetrator"
-	power_usage = 20
 	slot = GUN_SLOT_BARREL
 	projectile_override = /obj/projectile/beam/laser/microfusion/penetrator
 	power_usage = 80 // A price to pay to penetrate through armor
@@ -310,7 +307,7 @@ The gun fires fast heavy lasers but takes a long time to fire.
 	attachment_overlay_icon_state = "attachment_lance"
 	heat_addition = 150
 	power_usage = 100
-	delay_to_add = 2.5 SECONDS
+	delay_to_add = 2 SECONDS
 	new_fire_sound = 'sound/items/weapons/lasercannonfire.ogg'
 	projectile_override = /obj/projectile/beam/laser/microfusion/lance
 

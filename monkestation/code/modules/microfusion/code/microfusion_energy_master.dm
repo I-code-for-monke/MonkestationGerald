@@ -347,10 +347,10 @@
 	var/burst_spread_mult = rand()
 
 	var/modified_delay = fire_delay
-	if(phase_emitter)
-		modified_delay = phase_emitter.fire_delay
 	if(user && HAS_TRAIT(user, TRAIT_DOUBLE_TAP))
 		modified_delay = ROUND_UP(fire_delay * 0.5)
+	if(phase_emitter)
+		modified_delay += phase_emitter.fire_delay
 
 	if(burst_size > 1)
 		firing_burst = TRUE
